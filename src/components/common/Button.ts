@@ -28,12 +28,13 @@ export const Button = styled.button<{
   `}
 
   ${props => (!props.variant || props.variant === 'primary') && css`
-    background: linear-gradient(135deg, var(--color-primary), #9c96e9);
-    color: var(--color-white);
+    background: linear-gradient(135deg, var(--color-primary), #9d4edd);
+    color: var(--color-text);
     
     &:hover {
       transform: translateY(-2px);
       box-shadow: var(--shadow-md);
+      filter: brightness(1.1);
     }
     
     &:active {
@@ -42,12 +43,13 @@ export const Button = styled.button<{
   `}
 
   ${props => props.variant === 'secondary' && css`
-    background: linear-gradient(135deg, var(--color-secondary), #ffcef3);
+    background: linear-gradient(135deg, var(--color-secondary), #2cb67d);
     color: var(--color-text);
     
     &:hover {
       transform: translateY(-2px);
       box-shadow: var(--shadow-md);
+      filter: brightness(1.1);
     }
     
     &:active {
@@ -62,7 +64,7 @@ export const Button = styled.button<{
     
     &:hover {
       background: var(--color-primary);
-      color: var(--color-white);
+      color: var(--color-text);
     }
   `}
 `;

@@ -2,19 +2,19 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
   :root {
-    --color-background: #f8f7ff;
-    --color-primary: #7c73e6;
-    --color-secondary: #ffa9e7;
-    --color-text: #2d2b55;
-    --color-text-light: #6c6a8a;
-    --color-white: #ffffff;
-    --color-error: #ff6b6b;
-    --color-success: #51cf66;
-    --color-warning: #ffd93d;
+    --color-background: #0f0e17;
+    --color-primary: #7f5af0;
+    --color-secondary: #2cb67d;
+    --color-text: #fffffe;
+    --color-text-light: #94a1b2;
+    --color-white: #16161a;
+    --color-error: #ef4444;
+    --color-success: #22c55e;
+    --color-warning: #f59e0b;
     
-    --shadow-sm: 0 2px 8px rgba(124, 115, 230, 0.1);
-    --shadow-md: 0 4px 12px rgba(124, 115, 230, 0.15);
-    --shadow-lg: 0 8px 24px rgba(124, 115, 230, 0.2);
+    --shadow-sm: 0 2px 8px rgba(127, 90, 240, 0.1);
+    --shadow-md: 0 4px 12px rgba(127, 90, 240, 0.15);
+    --shadow-lg: 0 8px 24px rgba(127, 90, 240, 0.2);
     
     --radius-sm: 8px;
     --radius-md: 12px;
@@ -61,6 +61,10 @@ export const GlobalStyles = createGlobalStyle`
     border: 2px solid transparent;
     outline: none;
     transition: all 0.2s ease;
+    background-color: var(--color-white);
+    color: var(--color-text);
+    padding: 8px 12px;
+    border-radius: var(--radius-sm);
 
     &:focus {
       border-color: var(--color-primary);
@@ -75,6 +79,11 @@ export const GlobalStyles = createGlobalStyle`
     &:hover {
       color: var(--color-secondary);
     }
+  }
+
+  ::selection {
+    background-color: var(--color-primary);
+    color: var(--color-text);
   }
 `;
 

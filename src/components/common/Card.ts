@@ -6,10 +6,12 @@ export const Card = styled.div`
   padding: 24px;
   box-shadow: var(--shadow-sm);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid rgba(127, 90, 240, 0.1);
 
   &:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-md);
+    border-color: rgba(127, 90, 240, 0.2);
   }
 `;
 
@@ -18,6 +20,7 @@ export const CardHeader = styled.div`
 
   h2, h3, h4 {
     margin: 0;
+    color: var(--color-text);
   }
 `;
 
